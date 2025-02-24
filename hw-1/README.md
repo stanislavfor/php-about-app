@@ -36,6 +36,8 @@ php runner -c save_event --name 'name' --receiver 1 --text 'text' --cron '* * * 
 
 ### Домашнее задание
 
+### [Проект 'cur' выполненный для Домашнего задания 1](../cur/)
+
 1. Установить Docker Desktop в Windows с официального сайта <a href="https://docs.docker.com/desktop/setup/install/windows-install/" style="color: black; text-decoration: underline;text-decoration-style: dotted;">docs.docker.com/desktop/setup/install/windows-install/</a> или с <a href="https://hub.docker.com/" style="color: black; text-decoration: underline;text-decoration-style: dotted;">hub.docker.com/</a> и указать в переменной PATH.
 2. Установить Composer в Windows с официального сайта <a href="https://getcomposer.org/download/" style="color: black; text-decoration: underline;text-decoration-style: dotted;">getcomposer.org/download/</a> и указать в переменной PATH.
 3. Настроить путь к базе данных <a href="https://www.sqlite.org/" style="color: black; text-decoration: underline;text-decoration-style: dotted;">SQlite</a> в проекте, добавив запись в файл '.env'.
