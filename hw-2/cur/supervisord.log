@@ -59,3 +59,15 @@
 2025-02-24 05:02:47,993 WARN received SIGTERM indicating exit request
 2025-02-24 05:02:47,994 INFO waiting for worker_00 to die
 2025-02-24 05:02:48,005 INFO stopped: worker_00 (exit status 0)
+2025-02-25 05:12:11,401 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2025-02-25 05:12:11,425 INFO supervisord started with pid 1
+2025-02-25 05:12:12,468 INFO spawned: 'worker_00' with pid 7
+2025-02-25 05:12:13,050 WARN exited: worker_00 (exit status 255; not expected)
+2025-02-25 05:12:14,054 INFO spawned: 'worker_00' with pid 8
+2025-02-25 05:12:14,559 WARN exited: worker_00 (exit status 255; not expected)
+2025-02-25 05:12:16,564 INFO spawned: 'worker_00' with pid 9
+2025-02-25 05:12:17,092 WARN exited: worker_00 (exit status 255; not expected)
+2025-02-25 05:12:20,099 INFO spawned: 'worker_00' with pid 10
+2025-02-25 05:12:20,641 WARN exited: worker_00 (exit status 255; not expected)
+2025-02-25 05:12:21,642 INFO gave up: worker_00 entered FATAL state, too many start retries too quickly
+2025-02-25 05:12:46,672 WARN received SIGTERM indicating exit request
