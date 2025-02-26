@@ -1,0 +1,11 @@
+# version: '3.8'
+
+services:
+  php-cli:
+    build: .
+    volumes:
+      - .:/var/www/html
+      - ./database/database.sqlite:/var/www/html/database/database.sqlite
+    environment:
+      - TZ=Europe/Moscow
+    command: /usr/bin/supervisord

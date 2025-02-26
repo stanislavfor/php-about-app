@@ -1,0 +1,12 @@
+{
+
+    "timeout": 300,
+    "source": {
+      "directories": ["app/"]
+    },
+
+    "logs": {
+      "text": "./infection.log"
+    }
+
+  }
