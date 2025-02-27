@@ -1,0 +1,19 @@
+# version: '3.8'
+
+services:
+  php-cli:
+    build: .
+    volumes:
+      - .:/var/www/html
+      - ./database/database.sqlite:/var/www/html/database/database.sqlite
+    environment:
+      - TZ=Europe/Moscow
+      - REDIS_HOST=redis  # Указываем хост Redis
+    command: /usr/bin/supervisord
+#    command: /bin/bash -c "php /var/www/html/runner -c tg_messages && /usr/bin/supervisord"
+
+  redis:
+    image: redis:alpine
+    ports:
+      - "6379:6379"  # Открываем порт Redis для внешнего доступа
+    command: redis-server --save 20 1 --loglevel warning  # Запускаем Redis-сервер с параметрами сохранения и логирования
